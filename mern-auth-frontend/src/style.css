@@ -1,0 +1,122 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+ 
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: "Roboto", sans-serif;
+}
+
+ul{
+  list-style: none;
+  margin-left: 2rem;
+}
+
+button,
+input[type="submit"] {
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  color: unset;
+}
+
+h1, h2, h3, h4, p, ul, li{
+
+  margin: 1.5em 0;
+}
+
+.container{ 
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+/* header*/
+
+#header {
+  display: flex;
+  background-color: turquoise;
+  justify-content:space-between;
+  align-items: center;
+  height: 60px;
+}
+
+#header .title {
+  margin: 0;
+  padding: 0 1rem;
+  color: #ffffff; 
+}
+
+#header .auth-options {
+  height: 100%;
+  display: flex;
+}
+
+#header .auth-options button{
+  background-color: rgb(10, 170, 170);
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+#header .auth-options button:hover{
+  background-color: rgb(19, 209, 209);
+}
+/*register*/
+.regi-log-form{
+  padding: 1rem;
+  margin: 1rem;
+}
+
+/*  Form  */
+
+.regi-log-form label,
+.regi-log-form input {
+ display: block;
+}
+
+.regi-log-form input{
+  margin-bottom: 1rem;
+}
+
+.regi-log-form label{
+  margin-bottom: 0.25rem;
+}
+
+.regi-log-form input[type="text"],
+.regi-log-form input[type="email"],
+.regi-log-form input[type="password"]{
+  padding: 0.5rem;
+  width: 70%;
+  border: 2px solid;
+  font-size: 1.5rem;
+  background-color: rgb(209, 247, 247);
+}
+
+.regi-log-form input[type="submit"]{
+  font-size: 1.75rem;
+  padding: 0.5rem 0.75rem ;
+  border: 2px solid rgb(11, 82, 82) ;
+  background-color: rgb(63, 255, 255);
+}
+.regi-log-form input[type="submit"]:hover{
+  background-color: rgb(10, 65, 65) ;
+}
+
+ 
+
+/*Query media*/
+
+@media screen and (max-width: 480){
+  #header .title {
+    font-size: 1rem;
+  }
+  .auth-options button{
+    font-size: 0.5rem;
+    padding: 0 0.5rem;
+  }
+}
